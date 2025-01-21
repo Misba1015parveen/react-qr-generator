@@ -59,20 +59,32 @@ function App() {
 
   // Programmatically download the QR code image
   function handleDownload() {
+    if (!qrCode) return;
+  
     fetch(qrCode)
-      .then((response) => response.blob())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.blob();
+      })
       .then((blob) => {
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
         a.download = 'QRCode.png';
+        a.style.display = 'none';
         document.body.appendChild(a);
-        a.click();
+        a.click(); // Programmatically click the link
         a.remove();
         window.URL.revokeObjectURL(url);
       })
-      .catch((error) => console.error('Error downloading QR code:', error));
+      .catch((error) => {
+        console.error('Error downloading QR code:', error);
+        alert('Failed to download QR Code. Please try again.');
+      });
   }
+  
 
   return (
 
