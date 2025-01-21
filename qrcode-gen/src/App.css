@@ -1,0 +1,200 @@
+@import url('http://fonts.cdnfonts.com/css/lilly');
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 30px;
+}
+h1{
+  font-family: 'Lilly', sans-serif;
+  font-size: 50px;
+}
+.gen input{
+  height: 35px;
+  width: 250px;
+  font-size: 20px;
+  padding-left: 5px;
+}
+button{
+  position: relative;
+  height: 38px;
+  width: 100px;
+  top: -2px;
+  font-size: 18px;
+  border: none;
+  color: whitesmoke;
+  background-color: forestgreen;
+  box-shadow: 2px 2px 5px rgb(74, 182, 74);
+  cursor: pointer;
+}
+button:active{
+  box-shadow: none;
+}
+.extra{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.output-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+
+
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.input-box {
+  margin: 20px auto;
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input, select, textarea {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.output-box {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.input-box, .extra-options, .buttons {
+  margin: 20px auto;
+  width: 60%;
+  padding: 10px;
+  
+  border-radius: 5px;
+}
+
+input, select, textarea {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.output-box img {
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+
+
+
+/* App container */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #cff5c3;;
+}
+
+/* Flex container for input-box and extra-options */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px auto;
+  width: 65%; /* Adjust width to control spacing */
+}
+
+/* Individual boxes inside the flex container */
+.input-box, .extra-options {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid #6e6767;
+  border-radius: 5px;
+  background-color: aliceblue;
+}
+
+/* Ensure extra-options don't shrink too small */
+.extra-options {
+  max-width: 300px;
+}
+
+/* Inputs, selects, and textareas styling */
+input, select, textarea {
+  display: block;
+  margin: 10px auto;
+  width: 90%;
+  padding: 8px;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* QR Code Output */
+.output-box img {
+  margin-top: 20px;
+  max-width: 100%;
+}
