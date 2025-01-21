@@ -205,3 +205,20 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-box, .extra-options {
+    width: 90%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
